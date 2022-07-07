@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* 구글 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+body{font-family: 'Noto Sans KR', sans-serif !important;}
+h1,h2,h3,h4,h5,h6,p,span,div,li,a{font-family: 'Noto Sans KR', sans-serif !important;}
 /*!
 * Start Bootstrap - Agency v7.0.11 (https://startbootstrap.com/theme/agency)
 * Copyright 2013-2022 Start Bootstrap
@@ -10,6 +14,91 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+/* 원페이지 스크롤 세팅 CSS */
+body{
+  overflow:hidden;
+  margin:0;
+}
+
+/* 화면 전체 CSS */
+#content_wrap{
+  position:relative;
+  overflow:hidden;
+  transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+/* 각 view 부분 CSS */
+.panel{
+  position:relative;
+  height:100vh;
+  overflow: hidden;
+  padding:1em;
+}
+
+#introduce{
+  height:200vh;
+}
+
+
+
+/* 기본 세팅 CSS */
+.text_weight_light{font-weight:300;}
+.text_weight_med{font-weight:400;}
+.text_weight_bold{font-weight:700;}
+
+.text_size_title{font-size:55px;}
+.text_size_sub{font-size:18px;}
+
+.text_type_basic{color:#fff !important;}
+
+/* main banner section */
+#main_banner{
+  position:relative;
+  display:flex;
+  align-items:center;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85) ),url("../assets/img/main_banner.jpg");
+  background-position:center;
+}
+.baner_text{
+  font-size:30px; 
+  /* text-align:center; */
+  display: grid;
+  place-items: center;
+}
+
+.hello_world{
+  width:361px;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+/* banner text animation */
+@keyframes typing {
+  from{
+    width: 0;
+  }  
+}
+
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }  
+}
+
+
+.next_btn{
+  position:absolute; bottom:0; left:50%; transform:translateX(-50%); border-radius:15px !important;
+  border-bottom-right-radius:0 !important; border-bottom-left-radius:0 !important;
+}
+
+/* introduce section */
+#introduce{
+  background-color:#3B8C66;
+}
+
+/* bootstrap 관련 CSS */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11423,7 +11512,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url("../assets/img/main_banner.jpg");
+  
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11552,6 +11641,32 @@ header.masthead .masthead-heading {
   cursor: pointer;
   background-color: transparent;
 }
+
+/* 4/28 추가 */
+.img_wrap{
+  position:relative;
+}
+.img_wrap .github_wrap, .img_wrap .youtube_wrap{
+  position:absolute;
+}
+.img_wrap .github_wrap{
+  left:0;
+  bottom:0;
+  width:100px;
+  height:80px;
+  background-color:#13653f;
+  opacity:0.8;
+  border-radius: 5px ;
+}
+.img_wrap .github_wrap>a{
+  display:block;
+  line-height:80px;
+}
+.img_wrap .youtube_wrap{
+  right:0;
+  bottom:0;
+}
+
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }

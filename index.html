@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>조민혁의 포트폴리오</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -22,7 +22,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">
+                <a class="navbar-brand top" href="#">
                     <span>M</span><span>Y</span>
                     <span>P</span><span>O</span><span>R</span><span>T</span><span>F</span><span>O</span><span>L</span><span>I</span><span>O</span>
                     <span>!</span>
@@ -33,45 +33,135 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Introduce</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#introduce">Introduce</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div clasas="content_wrap" id="content_wrap">
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Hello, World!</div>
-                <div class="masthead-subheading">웹 개발자, <span class="color">조민혁</span>의 포트폴리오 소개 사이트입니다.</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+        <section class="masthead panel" id="main_banner">
+            <div class="container baner_text">
+                <div class="text_type_basic text_weight_bold text_size_title mb-3 hello_world">Hello, World!</div>
+                <div class="text_type_basic text_weight_bold">신입 웹 개발자, <span class="color">조민혁</span>의 포트폴리오 소개 사이트입니다.</div>
+                <a class="btn btn-primary btn-xl next_btn" id="next_intro" href="#">Tell Me More</a>
             </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
+        </section>
+        <!-- introduce -->
+        <section class="page-section panel" id="introduce">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="text-center" style="margin-bottom:65px;">
+                    <h2 class="section-heading text-uppercase text_type_basic">Introduce</h2>
+                    <h3 class="text_size_sub text_weight_med text_type_basic mb-5">웹 개발자를 꿈꾸기까지의 과정입니다!</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/introduce/birth.png" alt="생일 아이콘" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text_type_basic">1991.09.25</h4>
+                                <h4 class="subheading text_type_basic">
+                                    저의 생년월일입니다!
+                                </h4>
+                            </div>
+                            <div class="timeline-body">
+                            <p class="text_weight_light text_type_basic">
+                                91년, 인천 출생으로 현재 인천에서 생활 중입니다!
+                            </p>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" style="background-color:#ff6262;"><img class="rounded-circle img-fluid" src="assets/img/introduce/school.png" alt="학교 아이콘" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text_type_basic">2012.02</h4>
+                                <h4 class="subheading text_type_basic">
+                                    가톨릭대학교 입학!
+                                </h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text_weight_light text_type_basic">성심 캠퍼스에 입학하였습니다!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image" style="background-color:#878ff8;"><img class="rounded-circle img-fluid" src="assets/img/introduce/army.png" alt="군인 아이콘" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text_type_basic">2013.02~2014.11</h4>
+                                <h4 class="subheading text_type_basic">군대 입대 및 전역</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text_weight_light text_type_basic">육군, 정비대대의 행정 계원으로 생활하였습니다!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" style="background-color:#ffce8e;"><img class="rounded-circle img-fluid" src="assets/img/introduce/graduate.png" alt="졸업 아이콘" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text_type_basic">2019.03</h4>
+                                <h4 class="subheading text_type_basic">가톨릭대학교 졸업</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-text_weight_light text_type_basic">수학과를 졸업하였습니다!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image" style="background-color:#8de67b"><img class="rounded-circle img-fluid" src="assets/img/introduce/js.png" alt="JavaScript" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text_type_basic">2021.06~2021.12</h4>
+                                <h4 class="subheading text_type_basic">그린아트컴퓨터 웹퍼블리셔 과정</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-text_weight_light text_type_basic">코딩에 대한 배움의 길로 들어섰습니다!</p>
+                            </div>
+                        </div>
+                    </li>                    
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" style="background-color:#dd7be6"><img class="rounded-circle img-fluid" src="assets/img/introduce/java.png" alt="JAVA" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="text_type_basic">2022.01~2022.07</h4>
+                                <h4 class="subheading text_type_basic">TIS정보기술교육센터</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-text_weight_light text_type_basic">본격적인 백엔드 분야로의 배움을 시작하였습니다!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- skill stack -->
+        <section class="page-section panel" id="skill">
+            <div class="container">
+                <div class="text-center" style="margin-bottom:65px;">
+                    <h2 class="section-heading text-uppercase">Skill Stack</h2>
+                    <h3 class="text_size_sub text_weight_med">저의 포트폴리오에 적용되는 기술들입니다!</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-circle fa-stack-2x text-danger"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <h4 class="my-3">HTML5</h4>
+                        <p class="text-muted">Sementic의 쓰임새, 태그의 구조에 대해 숙지하고 있으며 이를 통해 html 페이지를 제작 가능</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-circle fa-stack-2x text-info"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Responsive Design</h4>
+                        <h4 class="my-3">CSS3</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
@@ -79,14 +169,38 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Web Security</h4>
+                        <h4 class="my-3">JS & jQuery</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">JAVA</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-success"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">SPRINGBOOT</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-drak"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Thymeleaf</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section bg-light panel" id="portfolio">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" Style="margin-bottom:45px;">Portfolio</h2>
@@ -185,70 +299,9 @@
                 </div>
             </div>
         </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        <section class="page-section bg-light panel" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
@@ -292,7 +345,7 @@
             </div>
         </section>
         <!-- Clients-->
-        <div class="py-5">
+        <div class="py-5 panel">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 my-3">
@@ -311,7 +364,7 @@
             </div>
         </div>
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <section class="page-section panel" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Me</h2>
@@ -374,8 +427,9 @@
                 </form>
             </div>
         </section>
+        </div>
         <!-- Footer-->
-        <footer class="footer py-4">
+        <footer class="footer py-4 panel">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
@@ -404,11 +458,18 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">학사관리프로그램</h2>
                                     <p class="item-intro text-muted">JAVA,ORACLE</p>
-                                    <a href="https://www.youtube.com/watch?v=NeD8qtqoGXQ" target="_blank">
+                                    <div class="img_wrap">
                                         <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/haksa_thum.png" alt="..." />
-                                    </a>
+                                        <div class="github_wrap">
+                                            <a href="https://github.com/mhhjo/haksa" target="_blank">GitHub</a>
+                                        </div>
+                                        <div class="youtube_wrap">
+                                            <a href="https://www.youtube.com/watch?v=NeD8qtqoGXQ" target="_blank">Youtube</a>
+                                        </div>
+                                    </div>
+                                    
                                     <p>Eclips 툴과 SQL Developer를 사용하여 JAVA, ORACLE DB를 바탕으로 제작하였습니다.</p>
-                                    <p style="font-size:12px; color:#212529;">이미지 클릭 시, 새창으로 이동합니다.</p>
+                                    <p style="font-size:12px; color:#212529;">이미지에 커서를 올려주세요. </p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>참여:</strong>

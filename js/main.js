@@ -1,5 +1,5 @@
 $(function(){
-    $('.navbar-brand').mouseenter(function(){
+    $('.navbar-brand').stop().mouseenter(function(){
         $('.navbar-brand>span').each(function(index){
             $(this).delay(25*index).animate({top:-12},250,function(){
                 $(this).animate({top:0},250)
