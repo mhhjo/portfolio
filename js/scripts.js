@@ -38,6 +38,12 @@
 			slength = slength + step;
 		} else if (scdir === 'top') { // scroll top(처음 section으로 돌아감)
 			slength = 0;
+		} else if (scdir === 'introSec'){ // introduce section
+			slength = -100;
+		} else if (scdir === 'skillSec'){ // skill section
+			slength = -300;
+		} else if (scdir === 'portSec'){ // portfolio section
+			slength = -400;
 		}
 		if (hold === false) {
 			hold = true;
@@ -50,10 +56,25 @@
 
 		// 스크롤에 따른 nav 변화
 		const navbarBg = document.body.querySelector('#mainNav');
+		var navbarBtn = document.body.querySelector('#navbarResponsive');
+
 		if(slength < 0){
 			navbarBg.classList.add('navbar-shrink');		
 		}else{
 			navbarBg.classList.remove('navbar-shrink');
+		}
+
+		if(slength === -100){ // intro_section
+			var navIntro = navbarBtn.querySelector('#intro_section');
+			navIntro.classList.toggle('colorChange');
+		}else if(slength === -300){ // skill_section
+			var navSkill = navbarBtn.querySelector('#skill_section');
+			navSkill.classList.toggle('colorChange');
+		}else if(slength === -400){ // port_section
+			var navPort = navbarBtn.querySelector('#port_section');
+			navPort.classList.toggle('colorChange');
+		}else{
+
 		}
     }
 
@@ -109,6 +130,8 @@
 				}
 			}
 		}, false);
+				
+
 	}
 
     /* assignments */
@@ -136,14 +159,33 @@
 		});
 	}
 
+	
+	//// 각 section에 해당하는 버튼 클릭시 이동 이벤트
 	// next_btn 에 대한 이벤트(다음 section 만큼만 이동한다)
 	document.getElementById("next_intro").addEventListener("click", () =>{
 		scdir = 'up';
 		_scrollY(content_wrap);
 	})
+	// introduce
+	document.getElementById("intro_section").addEventListener("click", () =>{
+		scdir = 'introSec';
+		_scrollY(content_wrap);
+	})
+	// skill
+	document.getElementById("skill_section").addEventListener("click", () =>{
+		scdir = 'skillSec';
+		_scrollY(content_wrap);
+	})
+	// portfolio
+	document.getElementById("port_section").addEventListener("click", () =>{
+		scdir = 'portSec';
+		_scrollY(content_wrap);
+	})
 
 	
 })();
+
+
 
 
 

@@ -28,6 +28,7 @@ body{
 }
 
 /* 각 view 부분 CSS */
+
 .panel{
   position:relative;
   height:100vh;
@@ -50,6 +51,18 @@ body{
 .text_size_sub{font-size:18px;}
 
 .text_type_basic{color:#fff !important;}
+
+/* nav */
+.navbar-brand span{
+  color:#60BF81;
+  transition: all 0.4s ease;
+}
+
+a.colorChange{
+  color:#9FD948 !important;
+  transform:scale(1.07);
+}
+
 
 /* main banner section */
 #main_banner{
@@ -11451,13 +11464,14 @@ p {
   font-weight: 700;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
+  transition: all 0.4s ease;
   
 }
 /* #mainNav .navbar-brand img {
   height: 1.5rem;
 } */
 #mainNav .navbar-brand:hover{
-  color:#9FD948;
+  transform: scale(1.05);
 }
 
 
@@ -11773,7 +11787,7 @@ header.masthead .masthead-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .timeline > li .timeline-panel {
     float: left;
