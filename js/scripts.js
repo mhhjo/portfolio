@@ -56,25 +56,11 @@
 
 		// 스크롤에 따른 nav 변화
 		const navbarBg = document.body.querySelector('#mainNav');
-		var navbarBtn = document.body.querySelector('#navbarResponsive');
 
 		if(slength < 0){
 			navbarBg.classList.add('navbar-shrink');		
 		}else{
 			navbarBg.classList.remove('navbar-shrink');
-		}
-
-		if(slength === -100){ // intro_section
-			var navIntro = navbarBtn.querySelector('#intro_section');
-			navIntro.classList.toggle('colorChange');
-		}else if(slength === -300){ // skill_section
-			var navSkill = navbarBtn.querySelector('#skill_section');
-			navSkill.classList.toggle('colorChange');
-		}else if(slength === -400){ // port_section
-			var navPort = navbarBtn.querySelector('#port_section');
-			navPort.classList.toggle('colorChange');
-		}else{
-
 		}
     }
 

@@ -36,10 +36,10 @@ body{
   padding:1em;
 }
 
-#introduce{
-  height:200vh;
+.introduce_inner{
+  max-width:540px;
+  margin:0 auto;
 }
-
 
 
 /* 기본 세팅 CSS */
@@ -110,6 +110,12 @@ a.colorChange{
 #introduce{
   background-color:#3B8C66;
 }
+
+/* portfolio section */
+.port_item{
+  border-radius:15px;
+}
+
 
 /* bootstrap 관련 CSS */
 :root {
@@ -11696,6 +11702,7 @@ header.masthead .masthead-heading {
   bottom: 0;
   left: 40px;
   width: 2px;
+  height:635px;
   margin-left: -1.5px;
   content: "";
   background-color: #e9ecef;
@@ -11703,7 +11710,8 @@ header.masthead .masthead-heading {
 .timeline > li {
   position: relative;
   min-height: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 10px;
 }
 .timeline > li:after, .timeline > li:before {
   display: table;
@@ -11781,7 +11789,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .timeline:before {
     left: 50%;
   }
@@ -11832,7 +11840,7 @@ header.masthead .masthead-heading {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
-}
+} 
 @media (min-width: 1200px) {
   .timeline > li {
     min-height: 170px;
@@ -11851,7 +11859,7 @@ header.masthead .masthead-heading {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
-}
+} */
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
@@ -11928,4 +11936,45 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* bootstrap grid 5 column */
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+      width: 50%;
+      float: left;
+      justify-content: center !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+      width: 50%;
+      float: left;
+      justify-content: center !important;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
 }
