@@ -11666,11 +11666,8 @@ header.masthead .masthead-heading {
 .img_wrap{
   position:relative;
 }
-.img_wrap .github_wrap, .img_wrap .youtube_wrap{
+.img_wrap .github_wrap, .img_wrap .youtube_wrap, .img_wrap .dothome_wrap{
   position:absolute;
-}
-.img_wrap .github_wrap{
-  left:0;
   bottom:0;
   width:100px;
   height:80px;
@@ -11678,13 +11675,22 @@ header.masthead .masthead-heading {
   opacity:0.8;
   border-radius: 5px ;
 }
-.img_wrap .github_wrap>a{
+.img_wrap .github_wrap{
+  left:0;
+}
+
+.img_wrap .youtube_wrap{
+  right:0;  
+}
+
+.img_wrap .dothome_wrap{
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.img_wrap .github_wrap>a, .img_wrap .youtube_wrap>a, .img_wrap .dothome_wrap>a{
   display:block;
   line-height:80px;
-}
-.img_wrap .youtube_wrap{
-  right:0;
-  bottom:0;
 }
 
 .portfolio-modal .close-modal:hover {

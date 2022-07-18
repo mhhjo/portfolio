@@ -41,8 +41,10 @@
 		} else if (scdir === 'introSec'){ // introduce section
 			slength = -100;
 		} else if (scdir === 'skillSec'){ // skill section
-			slength = -300;
+			slength = -200;
 		} else if (scdir === 'portSec'){ // portfolio section
+			slength = -300;
+		} else if (scdir === 'conSec'){ // contact section
 			slength = -400;
 		}
 		if (hold === false) {
@@ -165,6 +167,11 @@
 	// portfolio
 	document.getElementById("port_section").addEventListener("click", () =>{
 		scdir = 'portSec';
+		_scrollY(content_wrap);
+	})
+	// contact
+	document.getElementById("con_section").addEventListener("click", () =>{
+		scdir = 'conSec';
 		_scrollY(content_wrap);
 	})
 
